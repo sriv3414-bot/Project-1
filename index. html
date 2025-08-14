@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>School & College Timetable Spec</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="toolbar">
+    <button class="btn" id="darkModeBtn" aria-pressed="false">🌙 Toggle Dark Mode</button>
+    <button class="btn" id="copyBtn">📋 Copy Plain Text</button>
+    <button class="btn primary" id="pngBtn">⬇️ Download as PNG</button>
+    <button class="btn" id="printBtn">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="wrap">
+    <main id="captureArea" class="page" role="document" aria-label="Timetable Specification">
+      <header>
+        <h1>School &amp; College Timetable — UI Flow Spec</h1>
+        <p>Clean, copy-ready version of your handwritten notes.</p>
+        <div class="meta">
+          <span class="chip">Spec</span>
+          <span class="chip">Version 1.0</span>
+          <span class="chip">Editable</span>
+        </div>
+      </header>
+
+      <hr />
+
+      <div class="grid">
+        <section class="card" aria-labelledby="schoolTitle">
+          <h2 id="schoolTitle"><span class="tag">1</span> School / College → Button 1</h2>
+          <p class="subtitle">School</p>
+          <ol>
+            <li>Select Std I – XII</li>
+            <li>Select Hours/Periods</li>
+            <li>Hours</li>
+            <li>Select Subject (Std Wise)</li>
+            <li>Selected subject shows on left side</li>
+            <li>Right side – Staff Name entry by subject</li>
+            <li>Submit → Create Time Table</li>
+          </ol>
+        </section>
+
+        <section class="card" aria-labelledby="collegeTitle">
+          <h2 id="collegeTitle"><span class="tag">2</span> College → Button 2</h2>
+          <p class="subtitle">College</p>
+          <ol>
+            <li>Select UG/PG</li>
+            <li>Select Year (I, II, III) / (I, II)</li>
+            <li>Select Day Order (1–6)</li>
+            <li>Select Hours/Periods → Timings</li>
+            <li>Year-wise Subject entry</li>
+            <li>Left side – Show subjects</li>
+            <li>Right side – Show staff entries</li>
+            <li>Create Time Table</li>
+          </ol>
+        </section>
+      </div>
+
+      <p class="footer-note">
+        Tip: Use the buttons above to copy the text, export as an image, or print to PDF.
+      </p>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
